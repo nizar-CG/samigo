@@ -1,0 +1,78 @@
+{
+    "language": "French",
+    "screens": {
+        "home": {
+            "title": "Accueil",
+            "text": {
+                "search": "Trouver un hôtel",
+                "title1": "Offres spéciales",
+                "title2": "Meilleure Affaire",
+                "all":"Voir Tout",
+                "book":"Réserver"
+            }
+        },
+        "explore":{
+            "title" :"Recherche",
+            "text":{
+                "search":"Recherche",
+                "notFoundText":"Aucune information disponible",
+                "selectDate":"Sélectionnez la période...",
+                "destination":"Destination",
+                "nationality":"Nationalité",
+                "in":"Arrivée",
+                "out":"Départ",
+                "room":"Chambre",
+                "currency":"Devise",
+                "children":"Enfants",
+                "child": "Enfant",
+                "addRoom":"Ajouter chambre +",
+                "removeRoom": "Supprimer chambre -",
+                "find":"Rechercher",
+                "selectDateInOrOut":"Sélectionnez votre date"
+
+            }
+        },
+        "offres":{
+            "title" :"Offres"
+        },
+        "profile":{
+            "title":"Profil",
+            "text":{
+                "title":"Mon profil",
+                "edit":"Modifier le profil",
+                "changePassword":"Changer le mot de passe",
+                "myBooking":"Ma réservation",
+                "credit":"Crédits"
+            }
+        },
+        "bestDeals":{
+            "title":"Meilleure Affaire",
+            "text":{
+                "beach":"Plage",
+                "wellBeing":"Bien-être",
+                "golf":"Golf",
+                "kitesurfing":"Kitesurf"
+            }
+        },
+        "hotelDetails":{
+            "text":{
+                "map":"Carte",
+                "satr":"Étoile",
+                "readMore": "Afficher plus",
+                "readLess": "Réduire",
+                "book": "Réserver"
+            }
+        },
+        "myBooking":{
+            "title":"Paiement",
+            "text":{
+                "confirm":"Confirmer la réservation",
+                "method":"Mode de paiement",
+                "night":"nuits",
+                "addCarte":"Ajouter une nouvelle carte",
+                "total":"Totale"
+            }
+        }
+
+    }
+}

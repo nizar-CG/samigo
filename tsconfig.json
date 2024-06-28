@@ -1,6 +1,9 @@
 {
   "extends": "expo/tsconfig.base",
   "compilerOptions": {
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "jsx": "react-native",
     "strict": true,
     "paths": {
       "@/*": [
@@ -13,5 +16,11 @@
     "**/*.tsx",
     ".expo/types/**/*.ts",
     "expo-env.d.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "babel.config.js",
+    "metro.config.js",
+    "jest.config.js"
   ]
 }

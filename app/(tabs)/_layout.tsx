@@ -1,23 +1,27 @@
-import { Tabs } from 'expo-router';
 import React from 'react';
-
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { TabBarIcon } from '@/components/navigation/TabBarIcon';
 import { Colors } from '@/constants/Colors';
-import { useColorScheme } from '@/hooks/useColorScheme';
-
+import { useTranslation } from 'react-i18next';
+import HomeScreen from '.';
+import Explore from'./explore';
+import Offres from './offres';
+import Profile from './profile';
 export default function TabLayout() {
-  const colorScheme = useColorScheme();
+  const { t } = useTranslation();
+  const Tabs = createBottomTabNavigator();
 
   return (
-    <Tabs
+    <Tabs.Navigator
       screenOptions={{
-        tabBarActiveTintColor: Colors[colorScheme ?? 'light'].tint,
+        tabBarActiveTintColor: Colors.vertdeau,
         headerShown: false,
       }}>
       <Tabs.Screen
         name="index"
+        component={HomeScreen}
         options={{
-          title: 'Home',
+          title: t("screens.home.title").toString(),
           tabBarIcon: ({ color, focused }) => (
             <TabBarIcon name={focused ? 'home' : 'home-outline'} color={color} />
           ),
@@ -25,13 +29,34 @@ export default function TabLayout() {
       />
       <Tabs.Screen
         name="explore"
+        component={Explore}
         options={{
-          title: 'Explore',
+          title: t("screens.explore.title").toString(),
           tabBarIcon: ({ color, focused }) => (
-            <TabBarIcon name={focused ? 'code-slash' : 'code-slash-outline'} color={color} />
+            <TabBarIcon name={focused ? 'search-outline' : 'search-outline'} color={color} />
           ),
         }}
       />
-    </Tabs>
+      <Tabs.Screen
+        name="offres"
+        component={Offres}
+        options={{
+          title: t("screens.offres.title").toString(),
+          tabBarIcon: ({ color, focused }) => (
+            <TabBarIcon name={focused ? 'star' : 'star-outline'} color={color} />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="profile"
+        component={Profile}
+        options={{
+          title: t("screens.profile.title").toString(),
+          tabBarIcon: ({ color, focused }) => (
+            <TabBarIcon name={focused ? 'person' : 'person-outline'} color={color} />
+          ),
+        }}
+      />
+    </Tabs.Navigator>
   );
 }

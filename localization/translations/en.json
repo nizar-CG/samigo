@@ -1,0 +1,78 @@
+{
+    "language": "English",
+    "screens": {
+        "home": {
+            "title": "Home",
+            "text": {
+                "search": "Find a Hotel",
+                "title1": "Special offres",
+                "title2": "Best Deals",
+                "all":"See All",
+                "book":"Book"
+            }
+        },
+        "explore":{
+            "title" :"Explore",
+            "text":{
+                "search":"Search",
+                "notFoundText":"No data found",
+                "selectDate":"Choose the period",
+                "destination":"Destination",
+                "nationality":"Nationality",
+                "in":"Check In",
+                "out":"Check Out",
+                "room":"Room",
+                "currency":"Currency",
+                "children":"Children",
+                "child": "Child",
+                "addRoom":"Add Room +",
+                "removeRoom": "Remove Room -",
+                "find":"Search",
+                "selectDateInOrOut":"Select your date"
+                
+            }
+        },
+        "offres":{
+            "title" :"Offers"
+        },
+        "profile":{
+            "title":"Profile",
+            "text":{
+                "title":"My profile",
+                "edit":"Edit Profile",
+                "changePassword":"Change Password",
+                "myBooking":"My booking",
+                "credit":"Credits"
+            }
+        },
+        "bestDeals":{
+            "title":"Best Deals",
+            "text":{
+                "beach":"Beach",
+                "wellBeing":"Well-being",
+                "golf":"Golf",
+                "kitesurfing":"kitesurfing"
+            }
+        },
+        "hotelDetails":{
+            "text":{
+                "map":"Map",
+                "satr":"Star",
+                "readMore": "Read More",
+                "readLess": "Read Less",
+                "book":"Book"
+
+            }
+        },
+        "myBooking":{
+            "title":"Payment",
+            "text":{
+                "confirm":"Confirm Booking",
+                "method":"Payment Method",
+                "night":"nights",
+                "addCarte":"Add new carte",
+                "total":"Total"
+            }
+        }
+    }
+}
