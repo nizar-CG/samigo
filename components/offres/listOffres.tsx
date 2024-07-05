@@ -1,10 +1,13 @@
-import { View ,Text,FlatList,Image,Dimensions, Platform,StyleSheet, TouchableOpacity} from "react-native";
+import { View ,Text,FlatList,Image,Dimensions, Platform,StyleSheet, TouchableOpacity, TextInput} from "react-native";
 import stylesOffre from "@/styles/stylesOffre";
 import { useTranslation } from 'react-i18next';
 import'../../localization/i18n';
 import { Colors, Images } from "@/constants";
 import { LinearGradient } from "expo-linear-gradient";
 import { Ionicons } from '@expo/vector-icons';
+import { useNavigation } from '@react-navigation/native';
+import { useState } from "react";
+
 
 const renderItems = (itemCount: number) => {
    const items = [];
@@ -16,7 +19,7 @@ const renderItems = (itemCount: number) => {
    return items;
  }
 
-export default function Offres(){
+export default function ListOfOffres(){
    const { t } = useTranslation();
    const offreImage=[Images.iberostart,Images.argos,Images.iberostart,Images.argos];
    const offreTiltle=["Iberostar kuriat est kuriat","Argos","Iberostar kuriat","Argos"];
@@ -24,9 +27,20 @@ export default function Offres(){
    const offrePlace=["Palace Monastir et Monastir" , "in Cappadocia","Palace Monastir" , "in Cappadocia"];
    const offre=["-35%","-25%","-35%","-25%"];
    const etoile : number[] = [4,5,4,5];
+   const navigation = useNavigation();
+   const [search,setSearch] = useState('');
+   
 
-    return <View style={{height:'100%',width:'100%',backgroundColor:Colors.white,paddingTop:50}}>
-      <Text style={stylesOffre.title}>{t("screens.home.text.title1")} </Text>
+    return <View style={{height:'100%',width:'100%',backgroundColor:Colors.white,paddingTop:20}}>
+      <View style={stylesOffre.searchContainer}>
+            <TextInput
+               value={search}
+               onChange={Text=>{ setSearch(Text.nativeEvent.text)}}
+               placeholder={t("screens.offres.search")}
+               style={{color:Colors.grey,fontFamily: 'Ebrima',width:'92%'}}
+            />
+            <Ionicons name="search" size={20} color={Colors.vert} style={{}}/>
+         </View>
       <FlatList
          key={"specialOffres"}
          data={offreImage}

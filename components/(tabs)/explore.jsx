@@ -108,6 +108,7 @@ return (
     style={{ flex: 1 }}
     behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
     keyboardVerticalOffset={Platform.OS === 'ios' ? 0 : 0}
+    
   >
     <View style={{width:'100%',height:'100%',position:'relative'}}>
       <Image source={Images.exploreImage} style={stylesExplore.containerImage}/>

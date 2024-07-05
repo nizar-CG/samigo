@@ -1,5 +1,5 @@
 export type RootStackParamList = {
-    index: undefined;
+    home: undefined;
     explore: undefined;
     offres: undefined;
     profile: undefined;
@@ -7,4 +7,9 @@ export type RootStackParamList = {
     book: undefined;
     hotelDetails : undefined;
     payment:undefined;
+    confirm:undefined;
+    index:undefined;
+    login:undefined;
+
+    
   };

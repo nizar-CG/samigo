@@ -5,6 +5,9 @@ import { LinearGradient } from 'expo-linear-gradient';
 import { Ionicons } from '@expo/vector-icons';
 import'../../localization/i18n'
 import { useTranslation } from 'react-i18next';
+import { useNavigation } from 'expo-router';
+import { NavigationProp } from '@react-navigation/native';
+import { RootStackParamList } from '@/hooks/types';
 
 
 interface Props {
@@ -27,10 +30,10 @@ const BestDealsInterface: React.FC<Props> = ({ index }) =>{
     const dealTiltle=["Bel Azur Hammamet","Savoy Sharm El Sheikh"];
     const dealOffre=["Beach" , "Tennis" ];
     const etoile : number[] = [4,5];
-
+    const navigation = useNavigation<NavigationProp<RootStackParamList>>();
 
     return (
-        <TouchableOpacity key={`bestDeal${index}`}>
+        <TouchableOpacity key={`bestDeal${index}`} onPress={() => {navigation.navigate('hotelDetails')}}>
             <Image style={stylesHome.containerDeal} source={dealImage[index]}/>
             <LinearGradient
                 start={{ x: 0, y: 1 }}
@@ -65,6 +68,7 @@ const BestDealsInterface: React.FC<Props> = ({ index }) =>{
                     alignItems: 'center',
                     backgroundColor:Colors.jaune
                     }} 
+                    onPress={() => {navigation.navigate('book')}}
                   >
                   <Text style={stylesHome.defaultText}>{t("screens.home.text.book")}</Text>
                 </TouchableOpacity>

@@ -33,7 +33,8 @@
             }
         },
         "offres":{
-            "title" :"Offres"
+            "title" :"Offres spéciales",
+            "search":"Recherche"
         },
         "profile":{
             "title":"Profil",
@@ -70,8 +71,34 @@
                 "method":"Mode de paiement",
                 "night":"nuits",
                 "addCarte":"Ajouter une nouvelle carte",
-                "total":"Totale"
+                "total":"Totale",
+                "cardValid":"Valide jusqu'au",
+                "cardNumber":"Numéro de carte",
+                "expiry":"Expiration",
+                "monthYear":"Mois/Année",
+                "holder":"Titulaire de la carte",
+                "save":"Sauvegarder"
             }
+        },
+        "confirm":{
+            "title":"Votre réservation est confirmée",
+            "text":"Nous avons envoyé votre confirmation par email à",
+            "menu":"Menu",
+            "history":"Historique"
+        },
+        "filter":{
+            "title":"Filtre",
+            "price":"Prix",
+            "stars":"Étoiles",
+            "board":"Pension",
+            "button":"Appliquer"
+        },
+        "start":{
+            "titleStart1":"Réservez votre",
+            "titleStart2":" Meilleur Hôtel",
+            "titleStart3":" avec nous.",
+            "textStart":"Samigo Trouvez votre hôtel facilement et à tout moment.",
+            "textButtonStart":"Commençons"
         }
 
     }

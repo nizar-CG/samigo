@@ -87,6 +87,74 @@ const stylesOffre = StyleSheet.create({
         fontSize:12,
         paddingRight:5
     },
+    titleFilter:{
+        fontFamily: 'EbrimaBold',
+        color:Colors.vert,
+        fontSize:23,
+        letterSpacing:1
+
+    },
+    sousTitleFilter:{
+        fontFamily: 'Ebrima',
+        fontSize:16,
+        marginTop:15
+    },
+    dividerFilter:{
+        height:3,
+        backgroundColor:Colors.vert,
+        width:220,
+        borderRadius:30,
+        marginBottom:15
+    },
+    textPriceFilter:{
+        fontSize:11,
+        color:Colors.titleGrey,
+        fontFamily: 'Ebrima',
+
+    },
+    containerPriceFilter:{
+        flexDirection:'row',
+        justifyContent:'space-between',
+        width:220,
+        alignItems:'flex-end'
+    },
+    containerButton:{
+        backgroundColor:Colors.vert,
+        height:45,
+        width:200,
+        borderRadius:30,
+        justifyContent:'center',
+        alignItems:'center',
+        marginTop:40
+    },
+    textButton:{
+        color:Colors.white,
+        fontFamily: 'EbrimaBold',
+        letterSpacing:1,
+        fontSize:18
+    },
+    containerCheckbox:{ 
+        flexDirection: 'row',
+        alignItems: 'center',
+        marginBottom:5
+    },
+    textChecbox:{
+        fontFamily: 'Ebrima',
+        paddingLeft:10,
+        fontSize:14,
+        color:Colors.grey
+    },
+    searchContainer:{
+        borderColor:Colors.transparent,
+        borderBottomColor:Colors.vert,
+        borderWidth:1,
+        marginBottom:10,
+        marginLeft:20,
+        marginRight:20,
+        padding:10,
+        flexDirection:'row',
+        justifyContent:'space-between'
+    }
 
 })
 

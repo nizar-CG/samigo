@@ -27,13 +27,14 @@
                 "child": "Child",
                 "addRoom":"Add Room +",
                 "removeRoom": "Remove Room -",
-                "find":"Search",
+                "find":"Find Room",
                 "selectDateInOrOut":"Select your date"
                 
             }
         },
         "offres":{
-            "title" :"Offers"
+            "title" :"Special offres",
+            "search":"Search"
         },
         "profile":{
             "title":"Profile",
@@ -70,9 +71,40 @@
                 "confirm":"Confirm Booking",
                 "method":"Payment Method",
                 "night":"nights",
-                "addCarte":"Add new carte",
-                "total":"Total"
+                "addCarte":"Add new card",
+                "total":"Total",
+                "cardValid":"Valid thru",
+                "cardNumber":"Card number",
+                "expiry":"Expiry",
+                "monthYear":"Month/Year",
+                "holder":"Card holder",
+                "save":"Save"
             }
+        },
+        "confirm":{
+            "title":"Your booking is Confirmed",
+            "text":"we've emailed your confirmation to ",
+            "menu":"Menu",
+            "history":"History"
+        },
+        "filter":{
+            "title":"Filter",
+            "price":"Price",
+            "stars":"Stars",
+            "board":"Boards",
+            "button":"Apply"
+        },
+        "start":{
+            "titleStart1":"Book your",
+            "titleStart2":" Best Hotel",
+            "titleStart3":" with us.",
+            "textStart":"Samigo Find your hotel easily and anytime .",
+            "textButtonStart":"Let's start",
+            "welcome":"Welcome!",
+            "username":"Username",
+            "password":"Password",
+            "textSignUp":"Don't have an account?",
+            "signUp":"Sign up"
         }
     }
 }

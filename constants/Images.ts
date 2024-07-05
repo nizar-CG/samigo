@@ -30,5 +30,14 @@ export const Images ={
     room4:require("@/assets/images/room4.jpg"),
     visa: require("@/assets/images/visa.png"),
     paypal:require("@/assets/images/paypal.png"),
-
+    cardBack:require("@/assets/images/card-back.png"),
+    cardFront:require("@/assets/images/card-front.png"),
+    puce:require("@/assets/images/puce.png"),
+    masterCard:require("@/assets/images/MasterCard.png"),
+    americanExpress:require("@/assets/images/americanExpress.png"),
+    reseauCard:require("@/assets/images/reseauCard.png"),
+    valise:require("@/assets/images/valise.png"),
+    login:require("@/assets/images/login.png"),
+    start:require("@/assets/images/start.jpg"),
+    samigo:require("@/assets/images/samigo.png"),
 } 

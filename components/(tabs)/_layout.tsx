@@ -3,7 +3,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { TabBarIcon } from '@/components/navigation/TabBarIcon';
 import { Colors } from '@/constants/Colors';
 import { useTranslation } from 'react-i18next';
-import HomeScreen from '.';
+import HomeScreen from './home';
 import Explore from'./explore';
 import Offres from './offres';
 import Profile from './profile';
@@ -18,7 +18,7 @@ export default function TabLayout() {
         headerShown: false,
       }}>
       <Tabs.Screen
-        name="index"
+        name="home"
         component={HomeScreen}
         options={{
           title: t("screens.home.title").toString(),
