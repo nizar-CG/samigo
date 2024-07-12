@@ -99,6 +99,25 @@
             "titleStart3":" avec nous.",
             "textStart":"Samigo Trouvez votre hôtel facilement et à tout moment.",
             "textButtonStart":"Commençons"
+        },
+        "compte":{
+            "textButtonStart":"Commençons",
+            "welcome":"Bienvenue!",
+            "username":"Username",
+            "firstName":"Prénom",
+            "lastName":"Nom",
+            "email":"Email",
+            "password":"Mot de passe",
+            "textSignUp":"Vous n'avez pas de compte ?",
+            "signUp":"S'inscrire",
+            "create":"Créer un compte",
+            "or":"OU",
+            "facebook":"Continuer avec Facebook",
+            "edit":"Editer le profil",
+            "save":"Sauvegarder",
+            "newPassword":"Nouveau mot de passe",
+            "confirmPassword":"Confirmer le mot de passe",
+            "changePassword":"Changer le mot de passe"
         }
 
     }

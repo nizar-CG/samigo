@@ -32,7 +32,7 @@ export default function Confirm(){
             <Text style={stylesConfirm.text}> {t("screens.confirm.text")}  </Text>
             <Text style={stylesConfirm.text}> Kellypotman@gmail.com </Text>
             <View style={{flexDirection:'row',marginTop:50}}>
-                <TouchableOpacity style={stylesConfirm.buttonLeft} onPress={()=>navigation.navigate("index")}>
+                <TouchableOpacity style={stylesConfirm.buttonLeft} onPress={()=>navigation.navigate("home")}>
                     <Text style={stylesConfirm.textButton}> {t("screens.confirm.menu")} </Text>
                 </TouchableOpacity>
                 <View style={stylesConfirm.divider}/>

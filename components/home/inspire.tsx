@@ -2,6 +2,9 @@ import { Image,TouchableOpacity,Text} from 'react-native';
 import{Colors, Images} from '@/constants';
 import stylesHome from '@/styles/stylesHome';
 import { LinearGradient } from 'expo-linear-gradient';
+import { useNavigation } from 'expo-router';
+import { NavigationProp } from '@react-navigation/native';
+import { RootStackParamList } from '@/hooks/types';
 
 interface Props {
     index: number
@@ -10,8 +13,10 @@ interface Props {
 const  InspireMeInterface: React.FC<Props> = ({ index }) => {
     const inspireImages =[Images.tunisia,Images.egypt,Images.turkey];
     const inspireTitle=["Tunisia","Egypt","Turkey"];
+    const navigation = useNavigation<NavigationProp<RootStackParamList>>();
+
     return (
-        <TouchableOpacity key={`InspireMe${index}`}>
+        <TouchableOpacity key={`InspireMe${index}`} onPress={() => { navigation.navigate('destination')}}>
             <Image
                 style={stylesHome.containerInspire}
                 source= {inspireImages[index]} />

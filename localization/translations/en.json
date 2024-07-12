@@ -99,12 +99,29 @@
             "titleStart2":" Best Hotel",
             "titleStart3":" with us.",
             "textStart":"Samigo Find your hotel easily and anytime .",
+            "textButtonStart":"Let's start"
+        },
+        "compte":{
             "textButtonStart":"Let's start",
             "welcome":"Welcome!",
             "username":"Username",
+            "firstName":"First Name",
+            "lastName":"Last Name",
+            "email":"Email",
             "password":"Password",
             "textSignUp":"Don't have an account?",
-            "signUp":"Sign up"
+            "signUp":"Sign up",
+            "create":"Create account",
+            "or":"OR",
+            "facebook":"Continue with Facebook",
+            "edit":"Edit Profile",
+            "save":"Save",
+            "newPassword":"New password",
+            "confirmPassword":"Confirm new password",
+            "changePassword":"Change Password"
+        },
+        "destination":{
+            "search":"Find Destination"
         }
     }
 }

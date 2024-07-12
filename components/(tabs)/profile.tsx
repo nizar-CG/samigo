@@ -1,17 +1,18 @@
 import { View ,Text,Image,Dimensions,TouchableOpacity} from "react-native";
-import stylesOffre from "@/styles/stylesOffre";
 import stylesProfile from "@/styles/stylesProfile";
 import { useTranslation } from 'react-i18next';
 import'../../localization/i18n';
 import { Colors, Images } from "@/constants";
-import { LinearGradient } from "expo-linear-gradient";
-import { Ionicons } from '@expo/vector-icons';
 import { Divider} from 'react-native-paper';
+import { useNavigation } from "expo-router";
+import { NavigationProp } from "@react-navigation/native";
+import { RootStackParamList } from "@/hooks/types";
 
 
 
 export default function Profile(){
     const { t } = useTranslation();
+    const navigation = useNavigation<NavigationProp<RootStackParamList>>();
 
     return (
         <View style={{height:'100%',width:'100%',backgroundColor:Colors.white,paddingLeft:15,paddingRight:15}}>
@@ -23,11 +24,11 @@ export default function Profile(){
                 </View>
                 <Image source={Images.profile} style={stylesProfile.containerImage}/>
             </View>
-            <TouchableOpacity>
+            <TouchableOpacity onPress={() => {navigation.navigate('editProfile')}}>
                 <Text style={stylesProfile.title2}>{t("screens.profile.text.edit")}</Text>
             </TouchableOpacity>
             <Divider />
-            <TouchableOpacity>
+            <TouchableOpacity onPress={() => {navigation.navigate('changePassword')}}>
                 <Text style={stylesProfile.title2}>{t("screens.profile.text.changePassword")}</Text>
             </TouchableOpacity>
             <Divider />
@@ -35,7 +36,7 @@ export default function Profile(){
                 <Text style={stylesProfile.title2}>{t("screens.profile.text.credit")}</Text>
             </TouchableOpacity>
             <Divider />
-            <TouchableOpacity>
+            <TouchableOpacity onPress={() => {navigation.navigate('myBooking')}}>
                 <Text style={stylesProfile.title2}>{t("screens.profile.text.myBooking")}</Text>
             </TouchableOpacity>
             <Divider />

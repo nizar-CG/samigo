@@ -68,7 +68,7 @@ export default function Explore() {
     const deleteRoom = (index) => {
       if (rooms.length > 1) {
         const updatedRooms = [...rooms];
-        updatedRooms.splice(index, 1);
+        updatedRooms.splice(index,1);
         setRooms(updatedRooms);
       }
     };

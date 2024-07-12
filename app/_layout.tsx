@@ -2,7 +2,7 @@ import { useFonts } from 'expo-font';
 import * as SplashScreen from 'expo-splash-screen';
 import { useEffect } from 'react';
 import 'react-native-reanimated';
-import { NavigationContainer } from '@react-navigation/native';
+import { NavigationContainer, useNavigation } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import TabLayout from '../components/(tabs)/_layout';
 import BestDeals from '@/components/navigation/bestDeals';
@@ -13,6 +13,11 @@ import Confirm from '@/components/navigation/confirm';
 import { HotelProvider } from '@/hooks/provider';
 import Start from './index';
 import Login from '@/components/compte/login';
+import SignUp from '@/components/compte/signUp';
+import EditProfile from '@/components/compte/editProfile';
+import ChangePassword from '@/components/compte/changePassword';
+import MyBooking from '@/components/compte/myBooking';
+import Destination from '@/components/navigation/destination'
 
 const Stack = createStackNavigator();
 
@@ -32,6 +37,7 @@ export default function RootLayout() {
     calibriBold: require('../assets/fonts/calibri-bold.ttf'),
     calibriRegular: require('../assets/fonts/calibri-regular.ttf'),
   });
+
 
   useEffect(() => {
     if (loaded) {
@@ -55,12 +61,23 @@ export default function RootLayout() {
           <Stack.Screen
             name="login"
             component={Login}
+            options={{ 
+              headerShown: false,
+              gestureEnabled:false  
+            }}
+          />
+          <Stack.Screen
+            name="signUp"
+            component={SignUp}
             options={{ headerShown: false }}
           />
           <Stack.Screen
             name="TabLayout"
             component={TabLayout}
-            options={{ headerShown: false }}
+            options={{ 
+              headerShown: false,
+              gestureEnabled:false
+            }}
           />
           <Stack.Screen
             name="bestDeals"
@@ -89,6 +106,26 @@ export default function RootLayout() {
               gestureEnabled:false , 
               headerShown: false
             }}
+          />
+          <Stack.Screen
+            name="editProfile"
+            component={EditProfile}
+            options={{headerShown: false}}
+          />
+          <Stack.Screen
+            name="changePassword"
+            component={ChangePassword}
+            options={{headerShown: false}}
+          />
+          <Stack.Screen
+            name="myBooking"
+            component={MyBooking}
+            options={{headerShown: false}}
+          />
+          <Stack.Screen
+            name="destination"
+            component={Destination}
+            options={{headerShown: false}}
           />
         
         </Stack.Navigator>

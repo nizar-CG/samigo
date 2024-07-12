@@ -10,6 +10,12 @@ export type RootStackParamList = {
     confirm:undefined;
     index:undefined;
     login:undefined;
+    signUp:undefined;
+    TabLayout:undefined;
+    editProfile:undefined;
+    changePassword:undefined;
+    myBooking:undefined;
+    destination:undefined;
 
     
   };

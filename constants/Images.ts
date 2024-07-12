@@ -40,4 +40,13 @@ export const Images ={
     login:require("@/assets/images/login.png"),
     start:require("@/assets/images/start.jpg"),
     samigo:require("@/assets/images/samigo.png"),
+    alexandria:require("@/assets/images/alexandria.jpg"),
+    cairo:require("@/assets/images/cairo.jpg"),
+    giza:require("@/assets/images/giza.jpg"),
+    dahab:require("@/assets/images/dahab.jpg"),
+    hurghada:require("@/assets/images/hurghada.jpg"),
+    luxor:require("@/assets/images/luxor.jpg"),
+    coverDestination:require("@/assets/images/coverDestination.jpg"),
+    coverDestination1:require("@/assets/images/coverDestination1.jpg"),
+    coverDestination2:require("@/assets/images/coverDestination2.jpg")
 } 

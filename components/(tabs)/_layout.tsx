@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { TabBarIcon } from '@/components/navigation/TabBarIcon';
 import { Colors } from '@/constants/Colors';
@@ -7,9 +7,23 @@ import HomeScreen from './home';
 import Explore from'./explore';
 import Offres from './offres';
 import Profile from './profile';
+import { BackHandler } from 'react-native';
 export default function TabLayout() {
   const { t } = useTranslation();
   const Tabs = createBottomTabNavigator();
+  useEffect(() => {
+    const backAction = () => {
+      return true;
+    };
+
+    const backHandler = BackHandler.addEventListener(
+      'hardwareBackPress',
+      backAction
+    );
+
+    return () => backHandler.remove(); 
+  }, []);
+
 
   return (
     <Tabs.Navigator

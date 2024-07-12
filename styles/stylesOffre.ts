@@ -145,7 +145,9 @@ const stylesOffre = StyleSheet.create({
         color:Colors.grey
     },
     searchContainer:{
-        borderColor:Colors.transparent,
+        borderTopColor:Colors.transparent,
+        borderRightColor:Colors.transparent,
+        borderLeftColor:Colors.transparent,
         borderBottomColor:Colors.vert,
         borderWidth:1,
         marginBottom:10,

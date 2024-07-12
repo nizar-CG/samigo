@@ -7,10 +7,12 @@ import { LinearGradient } from "expo-linear-gradient";
 import { useNavigation } from "expo-router";
 import { NavigationProp } from "@react-navigation/native";
 import { RootStackParamList } from "@/hooks/types";
+import { useEffect } from "react";
 
 export default function Start(){
     const { t } = useTranslation();
     const navigation = useNavigation<NavigationProp<RootStackParamList>>();
+
     return(
         <View style={{height:'100%',width:'100%',flex:1}}>
             <Image  source={Images.start} style={stylesStart.containerImage}/>
@@ -28,8 +30,8 @@ export default function Start(){
                      end={{ x: 1.6, y: 1 }}
                   >
                      <Text style={stylesStart.textButtonStart}>{t("screens.start.textButtonStart")}</Text>
-                  </LinearGradient>
-                </TouchableOpacity>
+                </LinearGradient>
+            </TouchableOpacity>
         </View>
     )
 }

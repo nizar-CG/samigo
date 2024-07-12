@@ -1,9 +1,10 @@
-import { Platform, StyleSheet } from "react-native";
+import { StyleSheet,Dimensions } from "react-native";
 import { Colors } from "@/constants";
 
 const stylesStart = StyleSheet.create({
+    
     containerImage:{
-        height:"65%",
+        height:Dimensions.get('window').height-280,
         width:"100%",
         borderBottomRightRadius:130
     },
@@ -43,43 +44,8 @@ const stylesStart = StyleSheet.create({
         right:0,
         borderTopLeftRadius:30,
         borderBottomLeftRadius:30
-    },
-    logo:{
-        height:50,
-        width:200,
-        marginBottom:10
-    },
-    field:{
-        flexDirection:'row',
-        borderColor:Colors.white,
-        borderWidth:1,
-        padding:10,
-        paddingLeft:30,
-        margin:15,
-        width:'80%',
-        borderRadius:30,
-        height:55,
-        backgroundColor:'#d2d2d2'
-
-    },
-    buttonLogin:{
-        height:55,
-        justifyContent:'center',
-        alignItems:'center',
-        padding:10,
-        borderRadius:30,
-        marginBottom:10
-
-    },
-    textWhite:{
-        marginBottom:100,
-        marginTop:10,
-        color:Colors.white,
-        fontFamily: 'calibriRegular',
-        fontSize:22,
-
-    },
-
+    }
+    
 
 })
 

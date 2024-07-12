@@ -1,5 +1,5 @@
 import { Colors } from "@/constants";
-import { Dimensions, StyleSheet } from "react-native";
+import { StyleSheet } from "react-native";
 
 const stylesConfirm =StyleSheet.create({
     containerImage:{
