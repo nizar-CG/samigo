@@ -99,6 +99,10 @@ export default function Payment(){
         }).start();
       };
 
+        const maskCvc = () => {
+          return cvc.replace(/./g, '*');
+        };
+
     return(
         <KeyboardAvoidingView
             style={{ flex: 1}}
@@ -191,7 +195,7 @@ export default function Payment(){
                             </View>
                             </> ):
                             <View style={{ transform: [{ rotateY: '180deg' }] }}>
-                                <Text style={stylesBooking.textCvc}>{cvc}</Text>
+                                <Text style={stylesBooking.textCvc}>{maskCvc()}</Text>
                             </View>
                             
                         }

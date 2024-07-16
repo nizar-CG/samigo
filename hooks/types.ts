@@ -16,6 +16,8 @@ export type RootStackParamList = {
     changePassword:undefined;
     myBooking:undefined;
     destination:undefined;
+    rooms:undefined;
+    hotels:undefined;
 
     
   };

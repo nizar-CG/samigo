@@ -122,6 +122,14 @@
         },
         "destination":{
             "search":"Find Destination"
+        },
+        "rooms":{
+            "title":"Romms",
+            "price":"/per night",
+            "next":"Next"
+        },
+        "hotels":{
+            "title":"Hotels"
         }
     }
 }

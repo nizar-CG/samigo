@@ -18,11 +18,12 @@ import EditProfile from '@/components/compte/editProfile';
 import ChangePassword from '@/components/compte/changePassword';
 import MyBooking from '@/components/compte/myBooking';
 import Destination from '@/components/navigation/destination'
+import Rooms from '@/components/navigation/rooms';
+import Hotels from '@/components/navigation/hotels';
 
 const Stack = createStackNavigator();
 
 
-// Prevent the splash screen from auto-hiding before asset loading is complete.
 SplashScreen.preventAutoHideAsync();
 
 export default function RootLayout() {
@@ -125,6 +126,16 @@ export default function RootLayout() {
           <Stack.Screen
             name="destination"
             component={Destination}
+            options={{headerShown: false}}
+          />
+          <Stack.Screen
+            name="rooms"
+            component={Rooms}
+            options={{headerShown: false}}
+          />
+          <Stack.Screen
+            name="hotels"
+            component={Hotels}
             options={{headerShown: false}}
           />
         

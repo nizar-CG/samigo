@@ -152,7 +152,7 @@ export default function Book(){
                     )}
                 </View>
                 <View style={{alignItems:'center'}}>
-                    <TouchableOpacity onPress={()=>navigation.navigate("payment")}>
+                    <TouchableOpacity onPress={()=>navigation.navigate("rooms")}>
                         <View style={stylesExplore.botton}>
                             <Text style={stylesExplore.textBotton}> {t("screens.explore.text.find")}</Text>
                         </View>

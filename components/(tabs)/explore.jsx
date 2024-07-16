@@ -1,7 +1,7 @@
 import { View,Image,Text,ScrollView,TouchableWithoutFeedback, KeyboardAvoidingView,Platform,Dimensions,TouchableOpacity} from 'react-native';
 import { Colors, Images } from '@/constants';
 import   stylesExplore from '@/styles/stylesExplore';
-import { useState } from 'react';
+import { useState} from 'react';
 import { Ionicons } from '@expo/vector-icons';
 import { useTranslation } from 'react-i18next';
 import'../../localization/i18n';
@@ -10,9 +10,12 @@ import DateRangePicker from "react-native-daterange-picker";
 import moment from "moment";
 import { Modal } from 'react-native-paper';
 import { IconButton } from 'react-native-paper';
+import {  useNavigation } from '@react-navigation/native';
+
 
 
 export default function Explore() {
+    const navigation = useNavigation();
     const { t } = useTranslation();
     const [startDate, setStartDate] = useState(null);
     const [endDate, setEndDate] = useState(null);
@@ -231,7 +234,7 @@ return (
           </View>
           <View style={{alignItems:'center'}}>
             <View style={stylesExplore.botton}>
-              <TouchableOpacity onPress={()=>{}}>
+              <TouchableOpacity onPress={()=>navigation.navigate("hotels")}>
                 <Text style={stylesExplore.textBotton}> {t("screens.explore.text.find")}</Text>
               </TouchableOpacity> 
             </View>

@@ -9,6 +9,12 @@ const stylesBooking =StyleSheet.create({
         fontFamily: 'EbrimaBold',
         fontSize:26
     },
+    titleUndreline:{
+        color:Colors.vert,
+        fontFamily: 'EbrimaBold',
+        fontSize:26,
+        textDecorationLine: 'underline',
+    },
     iconBack:{
         paddingTop:50,
         paddingLeft:20
@@ -134,7 +140,7 @@ const stylesBooking =StyleSheet.create({
         right:20
     },
     textCvc:{
-        fontSize:20,
+        fontSize:26,
         position:'absolute',
         top:85,
         right:-140
@@ -153,6 +159,60 @@ const stylesBooking =StyleSheet.create({
         fontFamily: 'EbrimaBold',
         fontSize:18,
         letterSpacing:1
+    },
+    containerImageRooms:{
+        height:180,
+        width:"90%",
+        marginTop:20,
+        marginBottom:10,
+        borderRadius:30
+    },
+    checkBox:{
+        height:20,
+        width:20,
+        borderRadius:5,
+        backgroundColor:Colors.vertdeauTran,
+        position:'absolute',
+        top:40,
+        left:40,
+        justifyContent:'center',
+        alignItems:'center'
+    },
+    text:{
+        fontFamily: 'calibriBold',
+        fontSize:14
+    },
+    greenText:{
+        fontFamily: 'calibriBold',
+        fontSize:15,
+        color:Colors.vert
+
+    },
+    smallGreenText:{
+        fontFamily: 'calibriRegular',
+        fontSize:11,
+        color:Colors.vert
+
+    },
+    containerJaune:{
+        borderRadius:40,
+        height:45,
+        width:100,
+        backgroundColor:Colors.jaune,
+        justifyContent:'center',
+        alignItems:'center'
+    },
+    containerDetailsRooms:{
+        flexDirection:'row',
+        justifyContent:'space-between',
+        marginRight:30,
+        marginLeft:30,
+        alignItems:'center'
+    },
+    bookText:{
+        color:Colors.white,
+        fontFamily: 'EbrimaBold',
+        fontSize:22
     }
 
     }

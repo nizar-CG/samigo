@@ -48,5 +48,8 @@ export const Images ={
     luxor:require("@/assets/images/luxor.jpg"),
     coverDestination:require("@/assets/images/coverDestination.jpg"),
     coverDestination1:require("@/assets/images/coverDestination1.jpg"),
-    coverDestination2:require("@/assets/images/coverDestination2.jpg")
+    coverDestination2:require("@/assets/images/coverDestination2.jpg"),
+    rooms_1:require("@/assets/images/rooms.1.jpg"),
+    rooms_2:require("@/assets/images/rooms.2.jpg"),
+    rooms_3:require("@/assets/images/rooms.3.jpg"),
 } 

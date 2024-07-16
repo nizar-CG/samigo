@@ -36,7 +36,7 @@ export default function Confirm(){
                     <Text style={stylesConfirm.textButton}> {t("screens.confirm.menu")} </Text>
                 </TouchableOpacity>
                 <View style={stylesConfirm.divider}/>
-                <TouchableOpacity style={stylesConfirm.buttonRight}>
+                <TouchableOpacity style={stylesConfirm.buttonRight} onPress={()=>navigation.navigate("myBooking")}>
                     <Text style={stylesConfirm.textButton}> {t("screens.confirm.history")} </Text>
                 </TouchableOpacity>
             </View>
